@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ddnet staff panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <%- include('partial/navbar', {data: data}); %>
+    <div class="wrapper">
+        <div class="content-landing">
+            <h1>ddnet-staff-panel</h1>
+            <%- whitelistMessage %>
+        </div>
+        <!--
+            <iframe width="720px" height="600px" src="<%= captchaBackend %>/?t=<%= token %>&callback=<%= hostname %>&ip=<%= serverIp %>" scrolling="no" frameborder="0"></iframe>
+        -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: url('cave.svg'), #62492dff;
+    /* BlmapChill BG colors */
+    /* background: opacity(url("cave.svg")),
+        linear-gradient(135deg, rgba(255, 166, 140, 255), transparent), linear-gradient(-135deg, rgba(255, 133, 102, 255), transparent),
+        linear-gradient(45deg, rgba(255, 211, 172, 255), transparent), linear-gradient(-45deg, rgba(255, 204, 176, 255), transparent); */
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-link {
+    border: 5px solid rgba(0, 0, 0, 0);
+}
+
+.img-link:hover {
+    border: 5px solid rgba(0, 0, 0, 0.186);
+}
+
+.message-green {
+    border: 2px solid rgba(0, 128, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    background-color: rgba(10, 175, 10, 0.75);
+    color: white;
+    margin: 5px;
+}
+
+.message-red {
+    border: 2px solid rgba(209, 18, 50, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    background-color: rgba(172, 22, 47, 0.75);
+    color: white;
+    margin: 5px;
+}
+
+.complete-entry {
+    list-style: none;
+    border: 2px solid rgb(124, 104, 104);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.complete-entry:hover {
+    background-color: rgb(137, 228, 152);
+}
+
+input[type=text], input[type=password], input[type=email] {
+    padding: 4px;
+}
+
+input {
+    border-radius: 3px;
+    border: 3px solid rgb(82, 60, 33);
+    background-color: rgba(98, 73, 45, 0.575);
+}
+
+input:hover {
+    background-color: rgba(128, 94, 56, 0.575);
+}
+
+.btn {
+    padding: 10px;
+    width: 500px;
+    background-color: rgb(194, 188, 105);
+    border: 2px solid rgb(231, 178, 62);
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: rgb(235, 183, 70);
+}
+
+.content {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(54, 0, 14, 0.034);
+    border: 5px solid rgba(54, 0, 14, 0.144);
+    border-radius: 4px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 50px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #543e24ff;
+    border: 5px solid rgba(54, 0, 14, 0.144);
+    border-radius: 4px;
+    max-width: 800px;
+}
+
+.content-landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background-color: #543e24ff;
+    border: 5px solid rgba(54, 0, 14, 0.144);
+    border-radius: 4px;
+    max-width: 800px;
+    display: block;
+    padding: 0px 100px 100px 100px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.paypal-icon {
+    height: 128px;
+}
+
+.discord-icon {
+    width: 128px;
+}
+
+iframe {
+    width: 500px;
+    height: 340px;
+}
+
+/* mobile */
+@media screen and (max-width: 900px) {
+    .content-landing {
+        max-width: 80vw;
+        padding: 10px;
+    }
+    .icon-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .discord-icon {
+        max-width: 80vw;
+    }
+    .paypal-icon {
+        max-height: calc(80vw / 2.584);
+    }
+    input, .btn {
+        width: 80vw;
+    }
+    iframe {
+        width: 80vw;
+        overflow: scroll;
+    }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navbar {
+    background-color: #543e24ff;
+    height: 50px;
+    border-bottom: 2px solid rgb(71, 52, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover {
+    color: rgb(233, 216, 120);
+}
